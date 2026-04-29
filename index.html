@@ -1,125 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Haven</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Butwal Coffee House</title>
 
-        header {
-            background-color: #3e2723;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f5f2;
+}
 
-        nav {
-            background-color: #5d4037;
-            padding: 10px;
-            text-align: center;
-        }
+/* HEADER */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+header h1 {
+    font-size: 45px;
+    margin: 0;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+header p {
+    font-size: 18px;
+}
 
-        .hero {
-            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center/cover;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px black;
-        }
+/* NAVBAR */
+nav {
+    background: #4e342e;
+    padding: 12px;
+    text-align: center;
+}
 
-        .container {
-            padding: 20px;
-        }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .menu {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+nav a:hover {
+    color: #ffccbc;
+}
 
-        .item {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            width: 200px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            text-align: center;
-        }
+/* SECTION */
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
 
-        footer {
-            background-color: #3e2723;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+h2 {
+    color: #4e342e;
+}
+
+/* MENU */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.price {
+    color: #6d4c41;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* LOCATION */
+.location {
+    background: #efebe9;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-    <h1>Coffee Haven ☕</h1>
-    <p>Your Daily Dose of Fresh Coffee</p>
+    <h1>☕ Butwal Coffee House</h1>
+    <p>Fresh Coffee | Cozy Vibes | Heart of Butwal</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">Menu</a>
-    <a href="#">Contact</a>
+    <a href="#">Location</a>
 </nav>
 
-<div class="hero">
-    Welcome to Coffee Haven
-</div>
-
 <div class="container">
-    <h2>Our Menu</h2>
+    <h2>Our Coffee Menu</h2>
+
     <div class="menu">
-        <div class="item">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
             <h3>Espresso</h3>
-            <p>Strong & bold coffee</p>
-            <p>$2</p>
+            <p class="price">Rs. 150</p>
         </div>
-        <div class="item">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
             <h3>Cappuccino</h3>
-            <p>Creamy & smooth</p>
-            <p>$3</p>
+            <p class="price">Rs. 250</p>
         </div>
-        <div class="item">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096">
             <h3>Latte</h3>
-            <p>Rich milk coffee</p>
-            <p>$3.5</p>
+            <p class="price">Rs. 280</p>
         </div>
-        <div class="item">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
             <h3>Mocha</h3>
-            <p>Chocolate flavored</p>
-            <p>$4</p>
+            <p class="price">Rs. 320</p>
         </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187">
+            <h3>Cold Coffee</h3>
+            <p class="price">Rs. 300</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86">
+            <h3>Americano</h3>
+            <p class="price">Rs. 200</p>
+        </div>
+
+    </div>
+
+    <div class="location">
+        <h2>📍 Visit Us</h2>
+        <p>Butwal-8, Traffic Chowk, Rupandehi, Nepal</p>
+        <p>Open Daily: 7:00 AM – 9:00 PM</p>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 Coffee Haven | Made with ❤️</p>
+    <p>© 2026 Butwal Coffee House | Made with ❤️ in Nepal</p>
 </footer>
 
 </body>
